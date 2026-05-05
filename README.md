@@ -1,4 +1,4 @@
-# Proyecto-Escuela-San-Jos-
+# Proyecto-Escuela-San-Jose-
 Proyecto diseñado por estudiantes avanzados de Tecnicatura en Desarrollo de Software para bachilleratos con orientación en programación.
 
 ---
