@@ -30,6 +30,20 @@ Enseñar los fundamentos del **pensamiento computacional** de forma práctica, d
 - Uso de decisiones (IF), repeticiones (WHILE) y subprocesos
 - Validación y corrección de errores (debugging)
 - Pensamiento lógico aplicado a la vida real
+## 🎯 Objetivo
+
+Que los estudiantes de secundaria pasen de **"no sé por dónde empezar"** a **"puedo resolver cualquier problema dividiéndolo en pasos lógicos"**, aplicándolo a un problema real y útil.
+
+**Público objetivo**: Estudiantes de 4° y 5° año de bachillerato con orientación en programación.
+
+---
+
+## 📂 Estructura del Repositorio
+
+- **`docs/`** — Guías, guion y documentación
+- **`src/`** — Código fuente (PseInt y Python)
+- **`actividades/`** — Escape Room, desafíos y plantillas
+- **`recursos/`** — Imágenes y materiales visuales
 
 ---
 
