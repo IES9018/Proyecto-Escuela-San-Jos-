@@ -106,13 +106,3 @@ Que los estudiantes comprendan y apliquen los **fundamentos del pensamiento comp
 - Recuerda el mensaje central:  
   **"La programación no es solo para computadoras: es una forma de pensar mejor."**
 
----
-
-**¡Gracias por usar AlgoFit!**  
-Cualquier sugerencia o mejora, abrí un *Issue* en el repositorio.
-
----
-
-**Equipo desarrollador**  
-Estudiantes avanzados de Tecnicatura en Desarrollo de Software  
-Preparado con ❤️ para inspirar a la próxima generación de programadores.
