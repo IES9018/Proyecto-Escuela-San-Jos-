@@ -1,0 +1,178 @@
+# 🎨 **Diagramas en PlantUML** - Lógica en Movimiento
+
+A continuación generamos los diagramas completos en **PlantUML** listos para usar. Podés copiar el código y pegarlo en:
+
+- [PlantUML Web Server](https://www.plantuml.com/plantuml)
+- Extensiones de VS Code
+- GitHub (con soporte Markdown)
+
+---
+
+## 1. 📊 Diagrama Principal: `Rutina Lógica de Ejercicios`
+
+**Archivo recomendado:** `diagrama_flujo/rutina_principal.puml`
+
+```plantuml
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam dpi 300
+skinparam nodesep 50
+skinparam ranksep 60
+
+start
+
+:Ingreso de datos;
+floating note right: tiempoDisponible\nenergia\n dolorLesion
+
+if (¿Dolor fuerte o lesión?) then (si)
+  :Movilidad suave 5-10 min;
+  stop
+else (no)
+endif
+
+:Calentamiento 3 min;
+
+if (tiempoDisponible >= 20?) then (si)
+  :modo = "completa";
+else (no)
+  :modo = "corta";
+endif
+
+if (energia == "alta") then (si)
+  :series = 3;
+  :reps altas;
+else (no)
+  :series = 2;
+  :reps bajas;
+endif
+
+if (modo == "completa") then (si)
+  :Rutina Completa;
+else (no)
+  :Rutina Corta;
+endif
+
+:Subproceso Sentadillas;
+:Subproceso Abdominales;
+:Subproceso Espinales;
+
+:Enfriamiento 2 min;
+stop
+
+@enduml
+
+
+
+2. 🔄 Subproceso: Abdominales
+Archivo: diagrama_flujo/subprocesos/abdominales.puml
+plantuml@startuml
+skinparam monochrome true
+skinparam shadowing false
+
+start
+
+:Preparación posición;
+if (¿Posición incorrecta?) then (si)
+  :Corregir posición;
+endif
+
+:Acostarse boca arriba;
+
+if (¿Dolor lumbar?) then (si)
+  :Ajuste suave;
+  if (¿Sigue el dolor?) then (si)
+    :Detener ejercicio;
+    stop
+  endif
+endif
+
+repeat
+  :Serie {series};
+  repeat
+    :Repetición {reps};
+    if (¿Dolor cuello?) then (si)
+      :Corrección técnica;
+    endif
+    :Ejecutar crunch;
+  repeat while (reps pendientes?)
+repeat while (series pendientes?)
+
+stop
+@enduml
+
+3. 🔄 Subproceso: Sentadillas
+Archivo: diagrama_flujo/subprocesos/sentadillas.puml
+plantuml@startuml
+skinparam monochrome true
+skinparam shadowing false
+
+start
+
+:De pie - postura inicial;
+
+repeat
+  :Serie {series};
+  repeat
+    :Repetición {reps};
+    
+    if (¿Talones se levantan?) then (si)
+      :Corregir pies;
+    endif
+    
+    :Bajar y subir controlado;
+    
+    if (¿Rodillas hacia adentro?) then (si)
+      :Abrir rodillas;
+    endif
+    
+    if (¿Dolor rodilla?) then (si)
+      :Ajuste / reducir;
+      if (¿Persiste dolor?) then (si)
+        :Detener por seguridad;
+        stop
+      endif
+    endif
+  repeat while (reps pendientes?)
+repeat while (series pendientes?)
+
+stop
+@enduml
+
+4. 🔄 Subproceso: Espinales
+Archivo: diagrama_flujo/subprocesos/espinales.puml
+plantuml@startuml
+skinparam monochrome true
+skinparam shadowing false
+
+start
+
+:Preparación posición boca abajo;
+
+if (¿Dolor lumbar?) then (si)
+  :Levantar menos;
+  if (¿Persiste?) then (si)
+    :Detener;
+    stop
+  endif
+endif
+
+repeat
+  :Serie {series};
+  repeat
+    :Repetición {reps};
+    :Elevar pecho controlado;
+  repeat while (reps pendientes?)
+repeat while (series pendientes?)
+
+stop
+@enduml
+
+5. 📁 Estructura de Carpetas Actualizada
+Bashdiagrama_flujo/
+├── rutina_principal.puml
+├── rutina_principal.png
+├── subprocesos/
+│   ├── abdominales.puml
+│   ├── sentadillas.puml
+│   └── espinales.puml
